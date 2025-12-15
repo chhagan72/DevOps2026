@@ -1,0 +1,2 @@
+WHAT IS DEVOPS
+DevOps is a set of practices, tools, and a cultural philosophy that promotes active collaboration between development and operations teams, focusing on automation, speed, and shared responsibility. By adopting a DevOps culture, teams can benefit from faster time-to-market, reduced risk of deployment failures, and higher efficiency and cost-effectiveness.
