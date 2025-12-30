@@ -1,0 +1,20 @@
+app:
+  name: myapp
+  version: 1.0
+  environment: production
+
+server:
+  host: localhost
+  port: 8080
+
+database:
+  engine: mysql
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root123
+
+services:
+  - nginx
+  - docker
+  - jenkins
