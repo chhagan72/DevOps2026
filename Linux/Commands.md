@@ -1,483 +1,1008 @@
-1  ls
-    2  mkdir devops
-    3  ls
-    4  ls -l
-    5  cd devops/
-    6  pwd
-    7  histry
-    8  touch newfile.txt
-    9  ls
-   10  cd ..
-   11  ls
-   12  touch myfile.txt
-   13  ls
-   14  ls 0l
-   15  ls -l
-   16  clear
-   17  ls
-   18  rm -f myfile.txt
-   19  ls
-   20  mkdir ck
-   21  ls
-   22  rm -f ck/
-   23  rm -r ck/
-   24  mkdir ck
-   25  rmdir ck/
-   26  ls
-   27  cd devops/
-   28  ls
-   29  cd ..
-   30  cat devops/newfile.txt
-   31  echo "This i sthe my first file "
-   32  echo "This i sthe my first file "> devops/newfile.txt
-   33  cat devops/newfile.txt
-   34  cd devops/
-   35  head newfile.txt
-   36  ls
-   37  pwd
-   38  ls
-   39  touch ck.txt
-   40  ls
-   41  cp ck.txt /home/ubuntu/
-   42  cd ..
-   43  ls
-   44  cd devops/
-   45  ls
-   46  mkdir cloud
-   47  ls
-   48  mv c
-   49  mv ck.txt /cloud
-   50  ls
-   51  mv cloud/ LinuxCloud
-   52  ls
-   53  wc newfile.txt
-   54  ls -l
-   55  history
-   56  1  ls
-   57  ls
-   58  echo "This is a my first file and this is the soft link line ">newfile.txt
-   59  cat newfile.txt
-   60  pwd
-   61  ln -s /home/ubuntu/devops/newfile.txt  Soft-link-file
-   62  ls
-   63  ls -ltr
-   64  cut -b 1 newfile.txt
-   65  cut -b 1-4 newfile.txt
-   66  vi myfile.txt
-   67  cat myfile.txt
-   68  ls
-   69  df
-   70  df -h
-   71  free
-   72  top
-   73  du
-   74  du .
-   75  ls -a
-   76  ls -al
-   77  ps
-   78  fuser
-   79  free
-   80  nohup free -h
-   81  ls
-   82  cat nohup.out
-   83  nohup df -h
-   84  cat nohup.out
-   85  head nohup.out
-   86  head -n 5 nohup.out
-   87  tail -n 5 nohup.out
-   88  vmstat
-   89  vmstat -a
-   90  history
-   91 bash
-    5  which git
-    6  which cp
-    7  id
-    8  sudo
-    9  cat /etc/passwd
-   10  sudo shutdown
-   11 sudo reboot
-   11 apt
-   12 yum
-   13 dnf
-   14 pacman 
-   15 portage
-   16 useradd
-   17 whoami
-   18 su - super user
-   19 passwd
-   20 userdel
-   21 groupadd
-   22 gpasswd -a, -m
-   23 groupdel
+ls – lists files and directories in the current directory
 
-   <!-- > file permission commands -->
-   1 Umask
-   2 is - l
-   3 chmod
-   4 chown command
-   5 chgrp command
-   
-   <!-- > compression commads -->
-   1 zip, gunzip, and gzip command
-   2 tar, untar command
-   
-   <!-- > file transfer commad -->
-   1 SCP command(copy file)
-   2 rsync command
+mkdir devops – creates a new directory named devops
 
+ls – shows files and directories after creating devops
 
+ls -l – lists files/directories with detailed information
 
-  1  ls
-    2  exit
-    3  sudo su
-    4  ls
-    5  pwd
-    6  uname
-    7  uptime
-    8  date
-    9  who
-   10  whomi
-   11  whoami
-   12  which python
-   13  bash
-   14  which bash
-   15  which git
-   16  which cp
-   17  id
-   18  sudo
-   19  cat /etc/passwd
-   20  history
-   21  apt
-   22  sudo apt install python 3
-   23  sudo apt install python
-   24  sudo apr-get install python
-   25  sudo apt-get install python
-   26  sudo apt-get update
-   27  sudo apt-get install python
-   28  sudo apt install docker.io
-   29  which docker
-   30  sudo apt remove docker.io
-   31  sudo useradd -m chhagankumawat
-   32  cd ..
-   33  ls
-   34  sudo passwd chhagankumawat
-   35  su chhagankumawat/
-   36  su chhagankumawat
-   37  whoami
-   38  cat /etc/passwd
-   39  sudo userdel chhagankumawat
-   40  ls
-   41  pwd
-   42  sudo useradd ck
-   43  sudo useradd ck1
-   44  sudo useradd ck2
-   45  sudo groupadd devops
-   46  cat /etc/passwd
-   47  cat /etc/group
-   48  sudo gpasswd -a ck1 devops
-   49  sudo gpasswd -a ubuntu devops
-   50  cat /etc/group
-   51  sudo groupadd tester
-   52  cat /etc/group
-   53  sudo gpasswd -m ck2, ck
-   54  sudo gpasswd -m ck2, ck tester
-   55  sudo gpasswd -m ck2,ck tester
-   56  sudo gpasswd -M ck2,ck tester
-   57  cat /etc/group
-   58  id
-   59  ls
-   60  history
-   61  ls -l
-   62  chmod 777 devops
-   63  chmod 777 devops/
-   64  ls  -l
-   65  history
-   66  chmod 777 devops/
-   67  sudo chmod 777 devops/
-   68  ls -l
-   69  sudo chmod 700 ck.txt
-   70  ls -l
-   71  ls
-   72  history
-   73  uamks
-   74  umask
-   75  cat .bashrc
-   76  ls -l
-   77  sudo chown ck ck.txt
-   78  ls -l
-   79  touch mk.php
-   80  mkdir cloud
-   81  ls
-   82  which zip
-   83  zip
-   84  sudo apt istall zip
-   85  sudo apt install zip
-   86  ls
-   87  ls devops/
-   88  zip devops/
-   89  zip -r devops.zip devops/
-   90  zip -r dev.zip devops/
-   91  sudo zip -r dev.zip devops/
-   92  ls
-   93  cd cloud/
-   94  ls
-   95  mkdir unzip
-   96  ls
-   97  pwd
-   98  cd dev.zip cloud
-   99  cd ..
-  100  ls
-  101  cd dev.zip cloud/unzip/
-  102  cp dev.zip cloud/unzip/
-  103  ls
-  104  cd cloud/
-  105  ls
-  106  cd unzip/
-  107  ls
-  108  unzip dev.zip
-  109  ls
-  110  history
-  111  ls
-  112  tar -cvzf dev.tar.gz devops/
-  113  ls
-  114  pwd
-  115  cd ..
-  116  ls
-  117  pwd
-  118  cd cloud/
-  119  cd unzip/
-  120  ls
-  121  cp dev.tar.gz /home/ubuntu/devops
-  122  ls
-  123  cd .. ..
-  124  cd ../..
-  125  ls
-  126  cd devops/
-  127  ls
-  128  tar -xvzf dev.tar.gz
-  129  ls
-  130  cd ..
-  131  ls
-  132  cat HD05.pdf
-  133  ls
-  134  pwd
-  135  cd ..
-  136  ls -l
-  137  cd ubuntu/
-  138  ls
-  139  history
+cd devops/ – moves into the devops directory
+
+pwd – shows the current directory path
+
+history – displays previously executed commands
+
+touch newfile.txt – creates an empty file named newfile.txt
+
+ls – lists files inside the devops directory
+
+cd .. – moves one directory back
+
+ls – lists files and directories in the parent directory
+
+touch myfile.txt – creates an empty file named myfile.txt
+
+ls – shows files including myfile.txt
+
+ls 0l – invalid command (typo, should be ls -l)
+
+ls -l – shows detailed list of files and directories
+
+clear – clears the terminal screen
+
+ls – lists files after clearing the screen
+
+rm -f myfile.txt – forcefully deletes myfile.txt
+
+ls – confirms myfile.txt is deleted
+
+mkdir ck – creates a directory named ck
+
+ls – lists files including ck
+
+rm -f ck/ – fails because rm -f cannot delete directories
+
+rm -r ck/ – deletes the ck directory recursively
+
+mkdir ck – creates ck directory again
+
+rmdir ck/ – removes empty ck directory
+
+ls – lists remaining files and directories
+
+cd devops/ – moves into devops directory
+
+ls – lists files inside devops
+
+cd .. – moves back to the parent directory
+
+cat devops/newfile.txt – displays the contents of newfile.txt
+   echo "This i sthe my first file " – prints the text on the terminal
+
+echo "This i sthe my first file " > devops/newfile.txt – writes the text into newfile.txt (overwrites existing content)
+
+cat devops/newfile.txt – displays the content of newfile.txt
+
+cd devops/ – moves into the devops directory
+
+head newfile.txt – shows the first few lines of newfile.txt
+
+ls – lists files and directories inside devops
+
+pwd – shows the current working directory path
+
+ls – lists files and directories again
+
+touch ck.txt – creates an empty file named ck.txt
+
+ls – lists files and directories in the current directory
+
+cp ck.txt /home/ubuntu/ – copies ck.txt to /home/ubuntu/ directory
+
+cd .. – moves back to the parent directory
+
+ls – lists files and directories in the parent directory
+
+cd devops/ – moves into the devops directory
+
+ls – lists files inside devops
+
+mkdir cloud – creates a directory named cloud
+
+ls – lists files and directories including cloud
+
+mv c – invalid command (incomplete source or destination)
+
+mv ck.txt cloud/ – moves ck.txt into the cloud directory
+
+ls – lists files and directories after moving ck.txt
+   mv cloud/ LinuxCloud – renames the cloud directory to LinuxCloud
+
+ls – lists files and directories in the current directory
+
+wc newfile.txt – shows line, word, and byte count of newfile.txt
+
+ls -l – lists files with detailed information (permissions, size, owner)
+
+history – displays all previously executed commands
+
+1 ls – invalid command (command number typed by mistake)
+
+ls – lists files and directories
+
+echo "This is a my first file and this is the soft link line " > newfile.txt – overwrites newfile.txt with new text
+
+cat newfile.txt – displays the contents of newfile.txt
+
+pwd – shows the present working directory
+
+ln -s /home/ubuntu/devops/newfile.txt Soft-link-file – creates a symbolic (soft) link to newfile.txt
+
+ls – lists files including the soft link
+
+ls -ltr – lists files in long format sorted by time (oldest first)
+
+cut -b 1 newfile.txt – displays the first byte of each line in newfile.txt
+
+cut -b 1-4 newfile.txt – displays the first four bytes of each line
+
+vi myfile.txt – opens myfile.txt in the vi editor
+
+cat myfile.txt – displays the contents of myfile.txt
+
+ls – lists files and directories
+
+df – shows disk space usage of file systems
+
+df -h – shows disk usage in human-readable format
+
+free – displays memory usage information
+
+top – shows real-time system process and resource usage
+
+du – shows disk usage of files and directories
+
+du . – shows disk usage of the current directory
+
+ls -a – lists all files including hidden files
+
+ls -al – lists all files in long format including hidden files
+
+ps – displays currently running processes
+
+fuser – shows which processes are using files or sockets
+
+free – displays memory usage again
+
+nohup free -h – runs free -h in background immune to logout
+
+ls – lists files (including nohup.out)
+
+cat nohup.out – displays output generated by the nohup command
+
+nohup df -h – runs disk usage command in background
+
+cat nohup.out – displays updated nohup output
+
+head nohup.out – shows first 10 lines of nohup.out
+
+head -n 5 nohup.out – shows first 5 lines of nohup.out
+
+tail -n 5 nohup.out – shows last 5 lines of nohup.out
+
+vmstat – displays system performance statistics
+
+vmstat -a – shows active and inactive memory details
+
+history – shows command history
+
+bash – starts a new Bash shell session
+    which git – shows the path of the git command binary
+
+which cp – shows the path of the cp command
+
+id – displays user ID, group ID, and groups of the current user
+
+sudo – runs a command with superuser (root) privileges
+
+cat /etc/passwd – displays the list of system users
+
+sudo shutdown – shuts down the system safely
+
+sudo reboot – restarts the system
+
+apt – package manager for Debian/Ubuntu systems
+
+yum – package manager for RHEL/CentOS systems
+
+dnf – modern package manager for Fedora/RHEL systems
+
+pacman – package manager for Arch Linux
+
+portage – package management system for Gentoo Linux
+
+useradd – creates a new user account
+
+whoami – displays the current logged-in username
+
+su - – switches to the superuser (root) environment
+
+passwd – sets or changes a user password
+
+userdel – deletes a user account
+
+groupadd – creates a new group
+
+gpasswd -a, -m – adds or manages users in a group
+
+groupdel – deletes a group
+
+   File Permission Commands
+
+umask – sets the default permission for newly created files and directories
+
+ls -l – displays file permissions, owner, group, and size
+
+chmod – changes file or directory permissions
+
+chown – changes file or directory owner
+
+chgrp – changes the group ownership of a file or directory
+
+📦 Compression Commands
+
+zip – compresses files into a zip archive
+
+gzip – compresses files using gzip format
+
+gunzip – decompresses gzip-compressed files
+
+tar – creates or extracts tar archive files
+
+untar – extracts files from a tar archive
+
+📂 File Transfer Commands
+
+scp – securely copies files between local and remote systems
+
+rsync – synchronizes and transfers files efficiently between systems
 
 
- scp -i .\Ubuntu.pem .\ck1\ ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu  (file Local to server transfer)
+ ls – list files and directories
 
- scp -i Ubuntu.pem -r ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu .  (file and server to local transfer)
+exit – exit the current shell session
 
- rsync -e " ssh -i Ubuntu.pem -avz /folder name/ ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu/
+sudo su – switch to the root (superuser) account
+
+ls – list files and directories
+
+pwd – show the present working directory
+
+uname – display system/OS name
+
+uptime – show how long the system has been running
+
+date – display current date and time
+
+who – show logged-in users
+
+whomi – invalid command (typo of whoami)
+
+whoami – show current logged-in username
+
+which python – show the path of the python executable
+
+bash – start a new bash shell
+
+which bash – show the path of bash executable
+
+which git – show the path of git executable
+
+which cp – show the path of copy command
+
+id – display user and group IDs
+
+sudo – execute command with root privileges
+
+cat /etc/passwd – display list of system users
+
+history – show command history
+
+apt – package management tool for Ubuntu/Debian
+
+sudo apt install python3 – install Python 3
+
+sudo apt install python – install Python package
+
+sudo apr-get install python – invalid command (typo of apt-get)
+
+sudo apt-get install python – install Python using apt-get
+
+sudo apt-get update – update package list
+
+sudo apt-get install python – install Python
+
+sudo apt install docker.io – install Docker
+
+which docker – show Docker binary path
+
+sudo apt remove docker.io – uninstall Docker
+
+sudo useradd -m chhagankumawat – create user with home directory
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+sudo passwd chhagankumawat – set password for user
+
+su chhagankumawat/ – invalid command (extra slash)
+
+su chhagankumawat – switch to user account
+
+whoami – show current user name
+
+cat /etc/passwd – display user account details
+
+sudo userdel chhagankumawat – delete user account
+
+ls – list files and directories
+
+pwd – show current directory path
+
+sudo useradd ck – create user ck
+
+sudo useradd ck1 – create user ck1
+
+sudo useradd ck2 – create user ck2
+
+sudo groupadd devops – create group devops
+
+cat /etc/passwd – display all users
+
+cat /etc/group – display all groups
+
+sudo gpasswd -a ck1 devops – add ck1 user to devops group
+
+sudo gpasswd -a ubuntu devops – add ubuntu user to devops group
+
+cat /etc/group – verify group membership
+   sudo groupadd tester – create a new group named tester
+
+cat /etc/group – display all system groups
+
+sudo gpasswd -m ck2, ck – invalid command (missing group name)
+
+sudo gpasswd -m ck2, ck tester – invalid syntax for adding users to group
+
+sudo gpasswd -m ck2,ck tester – invalid option (-m not correct here)
+
+sudo gpasswd -M ck2,ck tester – add multiple users (ck2, ck) to tester group
+
+cat /etc/group – verify group membership
+
+id – display current user and group IDs
+
+ls – list files and directories
+
+history – show command history
+
+ls -l – list files with permissions and ownership details
+
+chmod 777 devops – give full permissions to devops directory
+
+chmod 777 devops/ – give read, write, execute permissions to devops
+
+ls -l – verify permission changes
+
+history – show command history
+
+chmod 777 devops/ – change permissions again
+
+sudo chmod 777 devops/ – change permissions using root privileges
+
+ls -l – verify updated permissions
+
+sudo chmod 700 ck.txt – give owner full permission, remove others’ access
+
+ls -l – verify file permission change
+
+ls – list files and directories
+
+history – show command history
+
+uamks – invalid command (typo of umask)
+
+umask – show default file permission mode
+
+cat .bashrc – display shell configuration file
+
+ls -l – list files with permissions
+
+sudo chown ck ck.txt – change owner of ck.txt to user ck
+
+ls -l – verify ownership change
+
+touch mk.php – create an empty file mk.php
+
+mkdir cloud – create a directory named cloud
+
+ls – list files and directories
+
+which zip – show path of zip command
+
+zip – compression utility command
+
+sudo apt istall zip – invalid command (typo of install)
+
+sudo apt install zip – install zip package
+
+ls – list files after installing zip
+
+ls devops/ – list files inside devops directory
+
+zip devops/ – invalid (zip requires file or recursive option)
+
+zip -r devops.zip devops/ – compress devops directory into devops.zip
+
+zip -r dev.zip devops/ – create dev.zip archive from devops
+
+sudo zip -r dev.zip devops/ – create zip archive using root permissions
+
+ls – list files including zip archives
+
+cd cloud/ – move into cloud directory
+
+ls – list contents of cloud
+
+mkdir unzip – create directory named unzip
+
+ls – list files inside cloud
+
+pwd – show current directory path
+
+cd dev.zip cloud – invalid command (cd cannot open zip file)
+
+cd .. – move back to parent directory
+
+ls – list files and directories
+  cd dev.zip cloud/unzip/ – invalid command (cd cannot open zip file)
+
+cp dev.zip cloud/unzip/ – copy dev.zip into cloud/unzip directory
+
+ls – list files and directories
+
+cd cloud/ – move into cloud directory
+
+ls – list files inside cloud
+
+cd unzip/ – move into unzip directory
+
+ls – list files inside unzip
+
+unzip dev.zip – extract dev.zip contents
+
+ls – list extracted files and directories
+
+history – show command history
+
+ls – list files and directories
+
+tar -cvzf dev.tar.gz devops/ – create compressed tar archive of devops
+
+ls – list files including dev.tar.gz
+
+pwd – show current directory path
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+pwd – show current directory path
+
+cd cloud/ – move into cloud directory
+
+cd unzip/ – move into unzip directory
+
+ls – list files inside unzip
+
+cp dev.tar.gz /home/ubuntu/devops – copy tar file to devops directory
+
+ls – list files in current directory
+
+cd .. .. – move up two directories
+
+cd ../.. – move up two directories (correct syntax)
+
+ls – list files and directories
+
+cd devops/ – move into devops directory
+
+ls – list files inside devops
+
+tar -xvzf dev.tar.gz – extract dev.tar.gz archive
+
+ls – list extracted files
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+cat HD05.pdf – attempt to display PDF file (not readable text)
+
+ls – list files and directories
+
+pwd – show present working directory
+
+cd .. – move to parent directory
+
+ls -l – list files with detailed information
+
+cd ubuntu/ – move into ubuntu directory
+
+ls – list files and directories
+
+history – show command history
 
 
- 1 ping
- 2 netstate
- 3 ifconfig
- 4 mtr (My Trace route)
-  ls
-    2  exit
-    3  sudo su
-    4  ls
-    5  pwd
-    6  uname
-    7  uptime
-    8  date
-    9  who
-   10  whomi
-   11  whoami
-   12  which python
-   13  bash
-   14  which bash
-   15  which git
-   16  which cp
-   17  id
-   18  sudo
-   19  cat /etc/passwd
-   20  history
-   21  apt
-   22  sudo apt install python 3
-   23  sudo apt install python
-   24  sudo apr-get install python
-   25  sudo apt-get install python
-   26  sudo apt-get update
-   27  sudo apt-get install python
-   28  sudo apt install docker.io
-   29  which docker
-   30  sudo apt remove docker.io
-   31  sudo useradd -m chhagankumawat
-   32  cd ..
-   33  ls
-   34  sudo passwd chhagankumawat
-   35  su chhagankumawat/
-   36  su chhagankumawat
-   37  whoami
-   38  cat /etc/passwd
-   39  sudo userdel chhagankumawat
-   40  ls
-   41  pwd
-   42  sudo useradd ck
-   43  sudo useradd ck1
-   44  sudo useradd ck2
-   45  sudo groupadd devops
-   46  cat /etc/passwd
-   47  cat /etc/group
-   48  sudo gpasswd -a ck1 devops
-   49  sudo gpasswd -a ubuntu devops
-   50  cat /etc/group
-   51  sudo groupadd tester
-   52  cat /etc/group
-   53  sudo gpasswd -m ck2, ck
-   54  sudo gpasswd -m ck2, ck tester
-   55  sudo gpasswd -m ck2,ck tester
-   56  sudo gpasswd -M ck2,ck tester
-   57  cat /etc/group
-   58  id
-   59  ls
-   60  history
-   61  ls -l
-   62  chmod 777 devops
-   63  chmod 777 devops/
-   64  ls  -l
-   65  history
-   66  chmod 777 devops/
-   67  sudo chmod 777 devops/
-   68  ls -l
-   69  sudo chmod 700 ck.txt
-   70  ls -l
-   71  ls
-   72  history
-   73  uamks
-   74  umask
-   75  cat .bashrc
-   76  ls -l
-   77  sudo chown ck ck.txt
-   78  ls -l
-   79  touch mk.php
-   80  mkdir cloud
-   81  ls
-   82  which zip
-   83  zip
-   84  sudo apt istall zip
-   85  sudo apt install zip
-   86  ls
-   87  ls devops/
-   88  zip devops/
-   89  zip -r devops.zip devops/
-   90  zip -r dev.zip devops/
-   91  sudo zip -r dev.zip devops/
-   92  ls
-   93  cd cloud/
-   94  ls
-   95  mkdir unzip
-   96  ls
-   97  pwd
-   98  cd dev.zip cloud
-   99  cd ..
-  100  ls
-  101  cd dev.zip cloud/unzip/
-  102  cp dev.zip cloud/unzip/
-  103  ls
-  104  cd cloud/
-  105  ls
-  106  cd unzip/
-  107  ls
-  108  unzip dev.zip
-  109  ls
-  110  history
-  111  ls
-  112  tar -cvzf dev.tar.gz devops/
-  113  ls
-  114  pwd
-  115  cd ..
-  116  ls
-  117  pwd
-  118  cd cloud/
-  119  cd unzip/
-  120  ls
-  121  cp dev.tar.gz /home/ubuntu/devops
-  122  ls
-  123  cd .. ..
-  124  cd ../..
-  125  ls
-  126  cd devops/
-  127  ls
-  128  tar -xvzf dev.tar.gz
-  129  ls
-  130  cd ..
-  131  ls
-  132  cat HD05.pdf
-  133  ls
-  134  pwd
-  135  cd ..
-  136  ls -l
-  137  cd ubuntu/
-  138  ls
-  139  history
-  140  ping google.com
-  141  netstat
-  142  sudo install net-tools
-  143  sudo apt install net-tools
-  144  netstat
-  145  ls
-  146  tracerpoute youtube.com
-  147  traceroute youtube.com
-  148  sudo apt install traceroute
-  149  which traceroute
-  150  sudo apt install inetutils-traceroute
-  151  traceroute youtube.com
-  152  traceroute vtc3pl.com
-  153  tracepath vtc3pl.com
-  154  clear
-  155  mtr
-  156  mtr vtc3pl.com
-  157  nslookup vtc3pl.com
-  158  telnet vtc3pl.com:80
-  159  telnet vtc3pl.com
-  160  telnet vtc3pl.com 80
-  161  hostname
-  162  cat /tec/hosts
-  163  cat /etc/hosts
-  164  ip
-  165  ip address show
-  166  iwconfig
-  167  sudo apt install wireless-tools
-  168  iwconfig
-  169  ss
-  170  dig vtc3pl.com
-  171  whois vtc3pl.com
-  172  sudo apt install whois
-  173  whois vtc3pl.com
-  174  history
-  175  arp
-  176  ifplugstatus
-  177  sudo apt install ifplugd
-  178  ifplugstatus
-  179  route
-  180  curl
-  181  curl -x https://ir-example.mir.prod.reco.microsoft.com/Reco/V1.0/New?modeling=adw&Count=5
-  182  curl -x GET https://fake-json-api.mock.beeceptor.com/users
-  183  mkdir download
-  184  cd download/
-  185  ls
-  186  wget https://file-examples.com/wp-content/storage/2017/02/file-sample_100kB.doc
-  187  ls
-  188  cat file-sample_100kB.doc
-  189  ls
-  190  iptables
-  191  iptabled
-  192  sudo ip tables
-  193  sudo ip table
-  194  sudo ip table --list-rules
-  195  sudo iptables --list-rules
-  196  watch
-  197  watch mtr
-  198  watch top
-  199  nmap
-  200  sudo apt  install nmap
+ scp -i .\Ubuntu.pem .\ck1\ ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu  (file Local to server transfer) - 
+ Copies a file from local system to EC2 server using a private key.
+Uses SSH for secure file transfer.
+
+ scp -i Ubuntu.pem -r ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu .  (file and server to local transfer) - 
+ Copies files/directories from EC2 server to local system recursively.
+Downloads server data securely via SSH.
+
+ rsync -e " ssh -i Ubuntu.pem -avz /folder name/ ubuntu@ec2-13-220-31-46.compute-1.amazonaws.com:/home/ubuntu/ - 
+ Synchronizes files from local to server efficiently.
+Transfers only changed data and supports compression.
+
+
+ Network Commands
+
+ping – check network connectivity to a host
+
+netstat – display network connections and ports
+
+ifconfig – show or configure network interfaces
+
+mtr – trace network route with real-time statistics
+
+🖥️ Basic & System Commands
+
+ls – list files and directories
+
+exit – close the current shell session
+
+sudo su – switch to root (superuser)
+
+ls – list files and directories
+
+pwd – show present working directory
+
+uname – display system information
+
+uptime – show system running time
+
+date – display current date and time
+
+who – show logged-in users
+
+whomi – invalid command (typo of whoami)
+
+whoami – show current user
+
+which python – show python command path
+
+bash – start a new bash shell
+
+which bash – show bash binary path
+
+which git – show git binary path
+
+which cp – show copy command path
+
+id – show user and group IDs
+
+sudo – run command as root
+
+cat /etc/passwd – list system users
+
+history – show command history
+
+📦 Package Management
+
+apt – Debian/Ubuntu package manager
+
+sudo apt install python3 – install Python 3
+
+sudo apt install python – install Python
+
+sudo apr-get install python – invalid command (typo)
+
+sudo apt-get install python – install Python using apt-get
+
+sudo apt-get update – update package list
+
+sudo apt-get install python – install Python
+
+sudo apt install docker.io – install Docker
+
+which docker – show Docker binary path
+
+sudo apt remove docker.io – uninstall Docker
+
+👤 User & Group Management
+
+sudo useradd -m chhagankumawat – create user with home directory
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+sudo passwd chhagankumawat – set user password
+
+su chhagankumawat/ – invalid command (extra slash)
+
+su chhagankumawat – switch to another user
+
+whoami – show current user
+
+cat /etc/passwd – display all users
+
+sudo userdel chhagankumawat – delete user
+
+ls – list files and directories
+
+pwd – show current directory
+
+sudo useradd ck – create user ck
+
+sudo useradd ck1 – create user ck1
+
+sudo useradd ck2 – create user ck2
+
+sudo groupadd devops – create group devops
+
+cat /etc/passwd – list users
+
+cat /etc/group – list groups
+
+sudo gpasswd -a ck1 devops – add ck1 to devops group
+
+sudo gpasswd -a ubuntu devops – add ubuntu to devops group
+
+cat /etc/group – verify group members
+   sudo groupadd tester – create a new group named tester
+
+cat /etc/group – list all system groups
+
+sudo gpasswd -m ck2, ck – invalid command (group name missing)
+
+sudo gpasswd -m ck2, ck tester – invalid syntax for gpasswd
+
+sudo gpasswd -m ck2,ck tester – invalid option usage
+
+sudo gpasswd -M ck2,ck tester – add multiple users to tester group
+
+cat /etc/group – verify group membership
+
+id – display current user and group IDs
+
+ls – list files and directories
+
+history – display command history
+
+ls -l – list files with permissions and ownership
+
+chmod 777 devops – give full permissions to devops directory
+
+chmod 777 devops/ – change permissions of devops directory
+
+ls -l – verify permission changes
+
+history – show command history
+
+chmod 777 devops/ – change directory permissions again
+
+sudo chmod 777 devops/ – change permissions using root access
+
+ls -l – verify updated permissions
+
+sudo chmod 700 ck.txt – give owner full access only
+
+ls -l – verify file permission change
+
+ls – list files and directories
+
+history – display command history
+
+uamks – invalid command (typo of umask)
+
+umask – show default permission setting
+
+cat .bashrc – display bash configuration file
+
+ls -l – list files with permissions
+
+sudo chown ck ck.txt – change owner of ck.txt to user ck
+
+ls -l – verify ownership change
+
+touch mk.php – create empty mk.php file
+
+mkdir cloud – create cloud directory
+
+ls – list files and directories
+
+which zip – show path of zip command
+
+zip – file compression utility
+
+sudo apt istall zip – invalid command (typo of install)
+
+sudo apt install zip – install zip package
+
+ls – list files after installation
+
+ls devops/ – list contents of devops directory
+
+zip devops/ – invalid (requires recursive option)
+
+zip -r devops.zip devops/ – compress devops directory
+
+zip -r dev.zip devops/ – create zip archive of devops
+
+sudo zip -r dev.zip devops/ – create zip archive with root privileges
+
+ls – list files including zip archives
+
+cd cloud/ – move into cloud directory
+
+ls – list files inside cloud
+
+mkdir unzip – create unzip directory
+
+ls – list files inside cloud
+
+pwd – show current directory path
+
+cd dev.zip cloud – invalid command (cannot cd into zip file)
+
+cd .. – move to parent directory
+
+ls – list files and directories
+  cd dev.zip cloud/unzip/ – invalid command (cannot change directory into a zip file)
+
+cp dev.zip cloud/unzip/ – copy dev.zip into cloud/unzip directory
+
+ls – list files and directories
+
+cd cloud/ – move into cloud directory
+
+ls – list files inside cloud
+
+cd unzip/ – move into unzip directory
+
+ls – list files inside unzip
+
+unzip dev.zip – extract files from dev.zip
+
+ls – list extracted files
+
+history – show command history
+
+ls – list files and directories
+
+tar -cvzf dev.tar.gz devops/ – create compressed tar archive of devops
+
+ls – list files including dev.tar.gz
+
+pwd – show current working directory
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+pwd – show current directory
+
+cd cloud/ – move into cloud directory
+
+cd unzip/ – move into unzip directory
+
+ls – list files inside unzip
+
+cp dev.tar.gz /home/ubuntu/devops – copy tar file to devops directory
+
+ls – list files in current directory
+
+cd .. .. – move up two directories
+
+cd ../.. – move up two directories (correct syntax)
+
+ls – list files and directories
+
+cd devops/ – move into devops directory
+
+ls – list files inside devops
+
+tar -xvzf dev.tar.gz – extract dev.tar.gz archive
+
+ls – list extracted files
+
+cd .. – move to parent directory
+
+ls – list files and directories
+
+cat HD05.pdf – attempt to view PDF as text (not readable)
+
+ls – list files and directories
+
+pwd – show present working directory
+
+cd .. – move to parent directory
+
+ls -l – list files with detailed information
+
+cd ubuntu/ – move into ubuntu directory
+
+ls – list files and directories
+
+history – show command history
+
+🌐 Network Commands
+
+ping google.com – test network connectivity to Google
+
+netstat – display network connections and ports
+
+sudo install net-tools – invalid command (wrong syntax)
+
+sudo apt install net-tools – install networking utilities (netstat)
+
+netstat – verify netstat installation
+
+ls – list files and directories
+
+tracerpoute youtube.com – invalid command (typo)
+
+traceroute youtube.com – show network path to YouTube
+
+sudo apt install traceroute – install traceroute tool
+
+which traceroute – show traceroute command path
+
+sudo apt install inetutils-traceroute – install traceroute package
+  traceroute youtube.com – show network path packets take to YouTube
+
+traceroute vtc3pl.com – trace network route to vtc3pl.com
+
+tracepath vtc3pl.com – display network path and MTU information
+
+clear – clear the terminal screen
+
+mtr – combine ping and traceroute for network monitoring
+
+mtr vtc3pl.com – monitor network path to vtc3pl.com
+
+nslookup vtc3pl.com – query DNS records for the domain
+
+telnet vtc3pl.com:80 – invalid telnet syntax
+
+telnet vtc3pl.com – connect to host using telnet (default port 23)
+
+telnet vtc3pl.com 80 – test TCP connection to port 80
+
+hostname – display system hostname
+
+cat /tec/hosts – invalid path (typo)
+
+cat /etc/hosts – display local host name mappings
+
+ip – show network configuration commands
+
+ip address show – display IP address information
+
+iwconfig – show wireless network configuration
+
+sudo apt install wireless-tools – install wireless tools package
+
+iwconfig – verify wireless interface configuration
+
+ss – display socket statistics
+
+dig vtc3pl.com – perform DNS lookup
+
+whois vtc3pl.com – show domain registration details
+
+sudo apt install whois – install whois command
+
+whois vtc3pl.com – display domain ownership information
+
+history – show command history
+
+arp – display ARP table
+
+ifplugstatus – show network cable connection status
+
+sudo apt install ifplugd – install ifplugstatus tool
+
+ifplugstatus – verify interface plug status
+
+route – display routing table
+
+curl – transfer data from or to a URL
+
+curl -x https://ir-example.mir.prod.reco.microsoft.com/... – send HTTP request to a URL
+
+curl -x GET https://fake-json-api.mock.beeceptor.com/users – fetch data from API using GET method
+
+mkdir download – create directory download
+
+cd download/ – move into download directory
+
+ls – list files and directories
+
+wget https://file-examples.com/...doc – download file from the internet
+
+ls – list downloaded file
+
+cat file-sample_100kB.doc – attempt to view binary file (not readable)
+
+ls – list files
+
+iptables – manage firewall rules
+
+iptabled – invalid command
+
+sudo ip tables – invalid command
+
+sudo ip table – invalid command
+
+sudo ip table --list-rules – invalid command
+
+sudo iptables --list-rules – list firewall rules
+
+watch – run a command repeatedly
+
+watch mtr – continuously monitor network routes
+
+watch top – continuously monitor system processes
+
+nmap – network scanning and security tool
+
+sudo apt install nmap – install nmap package
+
+
+  1 AWK
+
+207  vim app.log
+  208  ls
+  209  head -n 2 app.log
+  210  awk '{print}' app.log
+  211  awk '{print $1}' app.log
+  212  awk '{print $1, $2}' app.log
+  213  awk '{print $1, $2,$4}' app.log
+  214  awk '{print $1, $2,$3,$4,$5}' app.log
+  215  awk '/INFO/ {print $1, $2,$3,$4,$5}' app.log
+  216  awk '/INFO/ {print $1, $2,$3,$4,$5}' app.log > only_info.log
+  217  ls
+  218  cat only_info.log
+  219  awk '/EVENT/ {print $1, $2,$3,$4,$5}' app.log
+  220  awk '/INFO/ {count++} END {print count}'app.log
+  221  awk '/INFO/ {count++} END {print count}' app.log
+  222  awk '/INFO/ {count++} END {print "The count of INFO :"count}' app.log
+  225  ls
+  226  awk '/2010-04-24/ {count++} END {print count}' app                                                                          .log
+  227  cat app.log
+  228  awk '{print $1}' app.log
+  229  awk '$2 >= "07:51:00" && $<= "07:54:00"{print $2,$                                                                          3,$4,$5}' app.log
+  230  awk '$2 >= "07:51:00" && $2 <= "07:54:00"{print $2                                                                          ,$3,$4,$5}' app.log
+  231  aws 'NR >=2 && NR <=10 {print NR}' app.log
+  232  awk 'NR >=2 && NR <=10 {print NR}' app.log
+  233  history
+
+  2 SED
+
+  234  sed -n '/INFO/p' app.log
+  235  sed -n 's/INFO/LOG/g' app.log
+  236  sed 's/INFO/LOG/g' app.log
+  237  sed -n -e '/INFO/=' app.log
+  238  sed -n -e '/INFO/=' -e '/INFO/p'  app.log
+  239  sed '1,10 s/INFO/LOG/g' app.log
+  240  sed '1,30 s/INFO/LOG/g' app.log
+  241  sed '1,10 s/INFO/LOG/g; 1,10p; 11q' app.log
+
+
+  3 GREP(Global regular expression pattern)
+
+  243  grep INFO app.log
+  244  grep -i info app.log
+  245  grep -i -c info app.log
+  246  pa aux
+  247  ps aux
+  248  ps aux | grep ubuntu
+  249  ps aux | grep ubuntu | awk '{print $2}'
+
 
 
