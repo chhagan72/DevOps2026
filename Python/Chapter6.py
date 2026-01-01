@@ -97,10 +97,14 @@
 # 6. Dictionaries in YAML Parsing
 
 import yaml
+import os
 
-with open("config.yml", "r") as file:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "config.yml")
+
+with open(file_path, "r") as file:
     config = yaml.safe_load(file)
 
 print(config["app"]["name"])
-print(config["database"]["host"])
-print(config["services"])
+print(config["app"]["version"])
+print(config["app"]["environment"])
